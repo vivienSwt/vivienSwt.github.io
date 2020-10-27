@@ -13,7 +13,7 @@
 **2. 服务器操作系统**
  - Linux(占比非常高)
  - Windows Server
- 
+
 **3. 移动端操作系统**
  - iOS(苹果)
  - Android(基于Linux系统)
@@ -149,7 +149,7 @@ Linux发行版：在内核版基础上，额外增加一些应用软件和图形
 ![ls](https://img-blog.csdnimg.cn/20201003105234781.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01vamllXzY2,size_16,color_FFFFFF,t_70#pic_left)
 ![ls](https://img-blog.csdnimg.cn/20201003105448974.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L01vamllXzY2,size_16,color_FFFFFF,t_70#pic_left)
 
---- 
+---
 ### <font color='red'>chmod</font>
 **文件读写权限解释**
 >rwx rwx rwx
@@ -159,7 +159,7 @@ Linux发行版：在内核版基础上，额外增加一些应用软件和图形
 >第三组 : 其他用户对文件的权限 ( **o : other 其他** )
 > r 读, w 写, x 执行
 > rw- rw- r--  文件所属用户可读写、不可执行; 文件所属组可读写、不可执行; 其他用户只读;
---- 
+---
 
 **字母法**
  1. u : user 用户
@@ -219,7 +219,7 @@ mkdir a b c   # 创建a目录, b目录, c目录
 mkdir -p a/b/c  # 递归创建a/b/c目录
 ```
 
---- 
+---
 ### <font color='red'>rm</font>
 >删除文件或目录
 >-r  删除目录
@@ -231,7 +231,7 @@ rm -f a.txt  # 强制删除文件, 即使文件不存在, 也不报错
 rm -rf *     # 强制删除所有文件/目录( 删库跑路 )
 ```
 
---- 
+---
 ### <font color='red'>cp</font>
 >拷贝文件
 >cp 源文件 目标文件
@@ -372,6 +372,7 @@ echo hello > a.txt   # 把echo hello 执行结果覆盖放入a.txt中  --> 将a.
 
 ### <font color='red'>追加重定向</font>
 > `>>` : 追加重定向
+>
 >    - 如果指定文件不存在, 就创建文件; 如果指定文件存在, 则在已有的内容后面追加
 ```shell
 echo hello world >> a.txt   # 如果a.txt已经存在, 就在已有的内容后面追加
@@ -469,9 +470,8 @@ gzip -d a.txt.gz  # 压缩a.txt.gz, 解压之后a.txt.gz就不存在了
 ```
 ---
 
-### <font color='red'>gzip</font>
+### <font color='red'>ungzip</font>
 >类似windows上的压缩软件, 压缩后的格式为zip格式
-
 
 
 
